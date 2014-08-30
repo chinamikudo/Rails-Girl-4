@@ -1,3 +1,62 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.gallery-item{
+	margin-bottom:2em;
+}
+.hero-title{
+	font-family:"Bree Serif",serif;
+	padding:3em;
+	color:lighten(black,40%);
+}
+.post-hero{
+	position:relative;
+	background:image-url('001.jpg');
+	background-size:cover;
+	min-height:400px;
+
+	h1{
+		position: absolute;
+		top:70%;
+		left: 0;
+		right: 0;
+		text-transform: uppercase;
+
+		text-align: center;
+		color: white;
+	}
+}
+.hero-item{
+	position:relative;
+	padding-top:9/16*100%;
+	overflow:hidden;
+
+&:hover .description{
+	transform:translateY(0%);
+}
+
+	.thumb{
+		position:absolute;
+		top:0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		img {
+			max-width: 100%;
+		}
+	}
+	.description{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
+		color: white;
+		background: rgba(black,0.8);
+		padding:2em;
+		transform: translateY(100%);
+		transition:250ms ease-in-out;
+
+		a{color:white;}
+	}
+}

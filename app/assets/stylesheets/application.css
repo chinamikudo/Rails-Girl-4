@@ -13,6 +13,33 @@
  *= require_tree .
  *= require_self
  */
-footer { margin-top: 100px; }
+ body{
+    font-family: "Oswald",sans-serif;
+ }
+footer { 
+	text-align: center;
+	color: white;
+	margin-top: 60px; 
+	background: #232323;
+	padding: 1em;
+}
 td { text-align: center; padding-left: 10px; }
 th { border-bottom: 1px solid #DDD; padding-left: 20px; }
+.user-gravatar {
+    display: inline-block;
+    width: 32px;
+    position: relative;
+    margin: 0;
+}
+
+.user-gravatar img {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    top: -22px;
+}
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+}
